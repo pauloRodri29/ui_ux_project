@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_ux_project/finance/ui/themes/theme_data.dart';
-import 'package:ui_ux_project/finance/views/statistic/statistic.dart';
+import 'package:ui_ux_project/finance/views/login/login.dart';
 
 void main() {
   runApp(const ManangerScreen());
@@ -16,7 +16,7 @@ class ManangerScreen extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.darkTheme(context),
       darkTheme: AppTheme.darkTheme(context),
-      home: FinanceStatisticPage(),
+      home: FinanceLoginPage(),
     );
   }
 }

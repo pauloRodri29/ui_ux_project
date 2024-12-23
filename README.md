@@ -1,53 +1,47 @@
-# Flutter UI/UX Practice Project
+# Projeto de Prática em UI/UX com Flutter
 
-Welcome to my Flutter UI/UX practice repository! This project is a hands-on exploration of modern UI/UX design principles, implemented through Flutter. Here, I aim to develop and refine my skills by creating visually appealing and functional app interfaces across various domains.
+Bem-vindo ao meu repositório de prática em UI/UX com Flutter! Este projeto é uma exploração prática dos princípios modernos de design UI/UX, implementados com Flutter. Aqui, busco desenvolver e aprimorar minhas habilidades criando interfaces de aplicativos visualmente atraentes e funcionais em diversos domínios.
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- **Finance Dashboard**: A sleek and interactive interface for managing finances.
-- **Student Management**: Tools to keep track of student data and academic progress.
-- **Storage Manager**: Efficiently organize and access stored items.
-- **And More!**: Additional screens showcasing diverse UI/UX challenges and solutions.
+- **Painel Financeiro**: Uma interface elegante e interativa para gerenciamento financeiro.
+- **Gestão de Alunos**: Ferramentas para acompanhar dados e progresso acadêmico dos alunos.
+- **Gerenciador de Armazenamento**: Organize e acesse itens armazenados de forma eficiente.
+- **E Mais!**: Telas adicionais que apresentam desafios e soluções diversificadas de UI/UX.
 
-## 📸 Screenshots
+## 📸 Capturas de Tela
 
-Here are some screenshots of the screens I've developed:
+Aqui estão algumas capturas de tela das interfaces que desenvolvi:
 
-### Finance Dashboard
-![Finance Dashboard Screenshot](https://via.placeholder.com/300x600?text=Finance+Dashboard)
+### Painel Financeiro
 
-### Student Management
-![Student Management Screenshot](https://via.placeholder.com/300x600?text=Student+Management)
+![Captura de Tela do Painel Financeiro](assets/screenshot/finance/screen_login.png)
+![Captura de Tela do Painel Financeiro](assets/screenshot/finance/screen_home.png)
+![Captura de Tela do Painel Financeiro](assets/screenshot/finance/screen_stastic.png)
 
-### Storage Manager
-![Storage Manager Screenshot](https://via.placeholder.com/300x600?text=Storage+Manager)
+## 🛠️ Tecnologias Utilizadas
 
-*(Replace the placeholder links with your actual screenshots)*
+- **Flutter**: Framework usado para construir aplicativos multiplataforma com um único código base.
+- **Dart**: Linguagem de programação para escrever a lógica do aplicativo.
+- **Figma/Adobe XD**: Ferramentas para design de UI/UX (se aplicável).
 
-## 🛠️ Technologies Used
+## 🌟 Objetivo
 
-- **Flutter**: The framework used to build cross-platform apps with a single codebase.
-- **Dart**: Programming language for writing the application logic.
-- **Figma/Adobe XD**: Tools for UI/UX design (if applicable).
+Este repositório é destinado ao aprendizado, experimentação e demonstração do meu progresso no design UI/UX usando Flutter. Estou aberto a feedbacks e colaborações para melhorar ainda mais essas interfaces!
 
-## 🌟 Purpose
+## 🤝 Contribuição
 
-This repository is intended for learning, experimentation, and showcasing my progress in UI/UX design using Flutter. I’m open to feedback and collaboration to make these interfaces even better!
+Sinta-se à vontade para fazer um fork deste repositório e sugerir melhorias. Contribuições são sempre bem-vindas!
 
-## 🤝 Contribution
+## 📄 Licença
 
-Feel free to fork this repository and suggest improvements. Contributions are always welcome!
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 📄 License
+## 💬 Contato
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 💬 Contact
-
-If you have any questions or suggestions, feel free to reach out:
+Se tiver alguma dúvida ou sugestão, entre em contato:
 
 - **GitHub**: [@pauloRodri29](https://github.com/pauloRodri29)
-- **Email**: [email](mailto:rodriguesjp29@gmail.com)
+- **Email**: [rodriguesjp29@gmail.com](mailto:rodriguesjp29@gmail.com)
 
-Thank you for checking out my project! 🚀
-
+Obrigado por conferir meu projeto! 🚀

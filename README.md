@@ -15,9 +15,9 @@ Aqui estão algumas capturas de tela das interfaces que desenvolvi:
 
 ### Painel Financeiro
 
-![Captura de Tela do Painel Financeiro](assets/screenshot/finance/screen_login.png)
-![Captura de Tela do Painel Financeiro](assets/screenshot/finance/screen_home.png)
-![Captura de Tela do Painel Financeiro](assets/screenshot/finance/screen_stastic.png)
+<img src="assets/screenshot/finance/screen_login.png" alt="Finance" width="400">
+<img src="assets/screenshot/finance/screen_home.png" alt="Finance" width="400">
+<img src="assets/screenshot/finance/screen_stastic.png" alt="Finance" width="400">
 
 ## 🛠️ Tecnologias Utilizadas
 

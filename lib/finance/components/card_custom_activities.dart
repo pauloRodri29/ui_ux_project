@@ -42,31 +42,35 @@ class CardCustomActivitiesHome extends StatelessWidget {
                   ),
                   ...transactions.map(
                     (tr) {
-                      return SingleChildScrollView(
-                        child: Card(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Icon(
-                                  tr.icon,
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      tr.title,
-                                    ),
-                                    Text(tr.details),
-                                  ],
-                                ),
-                                Text(
-                                  "\$ ${tr.value.toStringAsFixed(2)}",
-                                  style: TextTheme.of(context).titleMedium,
-                                )
-                              ],
-                            ),
+                      return Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                spacing: 12,
+                                children: [
+                                  Icon(
+                                    tr.icon,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        tr.title,
+                                      ),
+                                      Text(tr.details),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              Text(
+                                "\$ ${tr.value.toStringAsFixed(2)}",
+                                style: TextTheme.of(context).titleMedium,
+                              )
+                            ],
                           ),
                         ),
                       );

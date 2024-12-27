@@ -7,7 +7,6 @@ Bem-vindo ao meu repositório de prática em UI/UX com Flutter! Este projeto é 
 - **Painel Financeiro**: Uma interface elegante e interativa para gerenciamento financeiro.
 - **Gestão de Alunos**: Ferramentas para acompanhar dados e progresso acadêmico dos alunos.
 - **Gerenciador de Armazenamento**: Organize e acesse itens armazenados de forma eficiente.
-- **E Mais!**: Telas adicionais que apresentam desafios e soluções diversificadas de UI/UX.
 
 ## 📸 Capturas de Tela
 
@@ -26,15 +25,15 @@ Aqui estão algumas capturas de tela das interfaces que desenvolvi:
 
 - **Flutter**: Framework usado para construir aplicativos multiplataforma com um único código base.
 - **Dart**: Linguagem de programação para escrever a lógica do aplicativo.
-- **Figma/Adobe XD**: Ferramentas para design de UI/UX (se aplicável).
+- **Figma**: Ferramentas para design de UI/UX.
 
 ## 🌟 Objetivo
 
-Este repositório é destinado ao aprendizado, experimentação e demonstração do meu progresso no design UI/UX usando Flutter. Estou aberto a feedbacks e colaborações para melhorar ainda mais essas interfaces!
+Este repositório é destinado ao aprendizado, experimentação e demonstração de design UI/UX usando Flutter. Está aberto a feedbacks e colaborações para novas interfaces!
 
 ## 🤝 Contribuição
 
-Sinta-se à vontade para fazer um fork deste repositório e sugerir melhorias. Contribuições são sempre bem-vindas!
+Sinta-se à vontade para fazer um fork deste repositório e sugerir melhorias ou adcionar sua interface. Contribuições são sempre bem-vindas!
 
 ## 📄 Licença
 

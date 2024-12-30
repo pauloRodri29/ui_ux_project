@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_ux_project/finance/ui/themes/theme_data.dart';
-import 'package:ui_ux_project/finance/views/home.dart';
+import 'package:ui_ux_project/iot/design/themes/theme_iot.dart';
+import 'package:ui_ux_project/iot/pages/device_control.dart';
 
 void main() {
   runApp(const ManangerScreen());
@@ -14,9 +14,9 @@ class ManangerScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      theme: AppTheme.darkTheme(context),
+      theme: AppTheme.lightTheme(context),
       darkTheme: AppTheme.darkTheme(context),
-      home: FinanceHomePage(),
+      home: DeviceControlPage(),
     );
   }
 }

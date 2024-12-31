@@ -3,6 +3,8 @@ import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
 import 'package:ui_ux_project/app_iot1/components/card_device_controller.dart';
 import 'package:ui_ux_project/app_iot1/components/card_temperature.dart';
 import 'package:ui_ux_project/app_iot1/design/colors/app_colors.dart';
+import 'package:ui_ux_project/app_iot1/models/climate.dart';
+import 'package:intl/intl.dart';
 
 class DeviceControlHomePage extends StatefulWidget {
   const DeviceControlHomePage({super.key});
@@ -12,6 +14,30 @@ class DeviceControlHomePage extends StatefulWidget {
 }
 
 class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
+  bool filter1Control = true;
+  bool filter2Control = false;
+  bool powerControl = false;
+  int selectedIndex = 0;
+
+  changeColorBnt() {
+    setState(() {
+      filter1Control = !filter1Control;
+      filter2Control = !filter2Control;
+    });
+  }
+
+  changePowerBnt(value) {
+    setState(() {
+      powerControl = !powerControl;
+    });
+  }
+
+  void changeTab(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +55,17 @@ class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
         child: Column(
           spacing: 12,
           children: [
-            DeviceControlCardTemperature(),
+            DeviceControlCardTemperature(
+              climate: Climate(
+                  humidity: 30,
+                  airQuality: "Good",
+                  currentDate:
+                      DateFormat(" MMMM 'de' d 'de' y").format(DateTime.now()),
+                  climate: "Cloudy",
+                  temperature: "26° C",
+                  indoorTemp: "23° C"),
+              pathImage: "assets/icons/device_control/climate.png",
+            ),
             Container(
               padding: EdgeInsets.symmetric(vertical: 2, horizontal: 12),
               decoration: BoxDecoration(
@@ -43,18 +79,34 @@ class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
                 children: [
                   Expanded(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: changeColorBnt,
+                      style: ButtonStyle(
+                        foregroundColor: filter1Control
+                            ? WidgetStatePropertyAll(
+                                AppColorsDevice.lightBackground)
+                            : WidgetStatePropertyAll(
+                                AppColorsDevice.primary950),
+                        backgroundColor: filter1Control
+                            ? WidgetStatePropertyAll(AppColorsDevice.primary950)
+                            : WidgetStatePropertyAll(
+                                AppColorsDevice.lightBackground),
+                      ),
                       child: Text("Room"),
                     ),
                   ),
                   Expanded(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: changeColorBnt,
                       style: ButtonStyle(
-                        foregroundColor:
-                            WidgetStatePropertyAll(AppColorsDevice.primary50),
-                        backgroundColor:
-                            WidgetStatePropertyAll(AppColorsDevice.primary950),
+                        foregroundColor: filter2Control
+                            ? WidgetStatePropertyAll(
+                                AppColorsDevice.lightBackground)
+                            : WidgetStatePropertyAll(
+                                AppColorsDevice.primary950),
+                        backgroundColor: filter2Control
+                            ? WidgetStatePropertyAll(AppColorsDevice.primary950)
+                            : WidgetStatePropertyAll(
+                                AppColorsDevice.lightBackground),
                       ),
                       child: Text("Devices"),
                     ),
@@ -65,10 +117,13 @@ class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
             Row(
               children: [
                 DeviceControlerCardControl(
-                  active: true,
+                  active: powerControl,
                   title: "Smarth Light",
                   descr: "5 device",
-                  icon: Icons.light,
+                  icon: powerControl
+                      ? Icons.lightbulb_circle_outlined
+                      : Icons.lightbulb_circle,
+                  onChanged: changePowerBnt,
                 ),
                 DeviceControlerCardControl(
                   active: false,
@@ -98,6 +153,7 @@ class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
         ),
       ),
       bottomNavigationBar: ResponsiveNavigationBar(
+        selectedIndex: selectedIndex,
         activeButtonFlexFactor: 60,
         activeIconColor: AppColorsDevice.accent,
         backgroundOpacity: 1,
@@ -105,7 +161,8 @@ class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
         borderRadius: 10,
         navigationBarButtons: [
           NavigationBarButton(
-              icon: Icons.home_filled, backgroundColor: AppColorsDevice.primary50),
+              icon: Icons.home_filled,
+              backgroundColor: AppColorsDevice.primary50),
           NavigationBarButton(
               icon: Icons.data_usage_rounded,
               backgroundColor: AppColorsDevice.primary50),
@@ -114,7 +171,7 @@ class _DeviceControlHomePageState extends State<DeviceControlHomePage> {
           NavigationBarButton(
               icon: Icons.person, backgroundColor: AppColorsDevice.primary50),
         ],
-        onTabChange: (value) {},
+        onTabChange: changeTab,
       ),
     );
   }

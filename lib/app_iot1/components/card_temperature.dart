@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:ui_ux_project/app_iot1/design/themes/theme_iot.dart';
+import 'package:ui_ux_project/app_iot1/models/climate.dart';
 
 class DeviceControlCardTemperature extends StatelessWidget {
-  const DeviceControlCardTemperature({super.key});
+  final Climate climate;
+  final String pathImage;
+  const DeviceControlCardTemperature({
+    super.key,
+    required this.climate,
+    required this.pathImage,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,23 +26,28 @@ class DeviceControlCardTemperature extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "18° C",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.displaySmall,
+                      climate.temperature,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .displaySmall,
                     ),
                     Text(
-                      "Cloudy",
-                      style:
-                          AppThemeDeviceControl.darkTheme(context).textTheme.headlineSmall,
+                      climate.climate,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .headlineSmall,
                     ),
                     Text(
-                      "Tue, February 07",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.bodySmall,
+                      climate.currentDate.toString(),
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .bodySmall,
                     ),
                   ],
                 ),
-                Image.asset(
-                  "assets/icons/device_control/climate.png",
-                )
+                Image.asset(pathImage
+                    // ,
+                    )
               ],
             ),
             Row(
@@ -46,11 +58,15 @@ class DeviceControlCardTemperature extends StatelessWidget {
                   children: [
                     Text(
                       "Indoor Temp",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.labelSmall,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .labelSmall,
                     ),
                     Text(
-                      "23° C",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.labelSmall,
+                      climate.indoorTemp,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .labelSmall,
                     ),
                   ],
                 ),
@@ -59,11 +75,15 @@ class DeviceControlCardTemperature extends StatelessWidget {
                   children: [
                     Text(
                       "Humidity",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.labelSmall,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .labelSmall,
                     ),
                     Text(
-                      "40%",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.labelSmall,
+                      "${climate.humidity.toString()}%",
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .labelSmall,
                     ),
                   ],
                 ),
@@ -72,11 +92,15 @@ class DeviceControlCardTemperature extends StatelessWidget {
                   children: [
                     Text(
                       "Air Quality",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.labelSmall,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .labelSmall,
                     ),
                     Text(
-                      "Good",
-                      style: AppThemeDeviceControl.darkTheme(context).textTheme.labelSmall,
+                      climate.airQuality,
+                      style: AppThemeDeviceControl.darkTheme(context)
+                          .textTheme
+                          .labelSmall,
                     ),
                   ],
                 ),

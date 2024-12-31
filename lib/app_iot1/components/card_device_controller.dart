@@ -8,13 +8,14 @@ class DeviceControlerCardControl extends StatelessWidget {
   final String descr;
   final IconData icon;
   final bool active;
-  const DeviceControlerCardControl({
-    super.key,
-    required this.title,
-    required this.descr,
-    required this.icon,
-    required this.active,
-  });
+  final Function(bool)? onChanged;
+  const DeviceControlerCardControl(
+      {super.key,
+      required this.title,
+      required this.descr,
+      required this.icon,
+      required this.active,
+      this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class DeviceControlerCardControl extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
-            spacing: 12,
+            spacing: 32,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
@@ -37,7 +38,7 @@ class DeviceControlerCardControl extends StatelessWidget {
                     angle: 90 * pi / 180,
                     child: Switch(
                       value: active,
-                      onChanged: (value) {},
+                      onChanged: onChanged,
                       activeColor: AppColorsDevice.accent,
                     ),
                   )

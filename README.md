@@ -5,19 +5,27 @@ Bem-vindo ao meu repositório de prática em UI/UX com Flutter! Este projeto é 
 ## 🚀 Funcionalidades
 
 - **Painel Financeiro**: Uma interface elegante e interativa para gerenciamento financeiro.
-- **Gestão de Alunos**: Ferramentas para acompanhar dados e progresso acadêmico dos alunos.
-- **Gerenciador de Armazenamento**: Organize e acesse itens armazenados de forma eficiente.
+- **Painel de Dispositivos Inteligentes**: Ferramentas para gerenciar seus dispositivos inteligentes de sua residência.
 
 ## 📸 Capturas de Tela
 
 Aqui estão algumas capturas de tela das interfaces que desenvolvi:
 
 ### Painel Financeiro
+
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
 <img src="assets/screenshot/finance/screen_login.png" alt="Finance" width="200">
 <img src="assets/screenshot/finance/screen_home.png" alt="Finance" width="200">
 <img src="assets/screenshot/finance/screen_stastic.png" alt="Finance" width="200">
+
+</div>
+
+### Painel de Dispositivos Inteligente
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<img src="assets/screenshot/" alt="IOT" width="200">
+<img src="assets/screenshot/" alt="IOT" width="200">
 
 </div>
 

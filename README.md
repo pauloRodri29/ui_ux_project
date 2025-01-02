@@ -11,21 +11,29 @@ Bem-vindo ao meu repositório de prática em UI/UX com Flutter! Este projeto é 
 
 Aqui estão algumas capturas de tela das interfaces que desenvolvi:
 
-### Painel Financeiro
+### Controle Financeiro
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
-<img src="assets/screenshot/finance/screen_login.png" alt="Finance" width="200">
-<img src="assets/screenshot/finance/screen_home.png" alt="Finance" width="200">
-<img src="assets/screenshot/finance/screen_stastic.png" alt="Finance" width="200">
+<img src="assets/screenshot/finance/financeLogin.jpg" alt="Finance" width="200">
+<img src="assets/screenshot/finance/financeHome.jpg" alt="Finance" width="200">
+<img src="assets/screenshot/finance/financeStatiscs.jpg" alt="Finance" width="200">
 
 </div>
 
-### Painel de Dispositivos Inteligente
+### Gerenciador de Dispositivos Inteligentes
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-<img src="assets/screenshot/" alt="IOT" width="200">
-<img src="assets/screenshot/" alt="IOT" width="200">
+<img src="assets/screenshot/iot/deviceControlDeviceInfor.jpg" alt="IOT" width="200">
+<img src="assets/screenshot/iot/deviceControlHome.jpg" alt="IOT" width="200">
+
+</div>
+
+### Painel de Estatísticas de Jogadores
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<img src="assets/screenshot/sport/sportHome.jpg" alt="sport" width="200">
+<img src="assets/screenshot/sport/sportPlayerInfor.jpg" alt="sport" width="200">
 
 </div>
 

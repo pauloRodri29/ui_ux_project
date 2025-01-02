@@ -18,7 +18,8 @@ class FinanceBntCustomLogin extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
-            backgroundColor: WidgetStatePropertyAll(AppColorsFinance.primary900),
+            backgroundColor:
+                WidgetStatePropertyAll(AppColorsFinance.primary900),
             maximumSize: WidgetStatePropertyAll(
               Size.fromWidth(MediaQuery.of(context).size.width * 0.8),
             ),
@@ -34,7 +35,8 @@ class FinanceBntCustomLogin extends StatelessWidget {
         ),
         IconButton(
           style: ButtonStyle(
-            backgroundColor: WidgetStateProperty.all(AppColorsFinance.black2b2b2b),
+            backgroundColor:
+                WidgetStateProperty.all(AppColorsFinance.black2b2b2b),
             shape: WidgetStateProperty.all(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -44,7 +46,7 @@ class FinanceBntCustomLogin extends StatelessWidget {
           onPressed: () {},
           icon: Icon(
             Icons.face,
-            size: 42,
+            size: 40,
           ),
         )
       ],

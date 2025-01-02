@@ -38,6 +38,7 @@ dependencies:
   dashed_circular_progress_bar: ^0.0.6
   responsive_navigation_bar: ^5.0.2
   intl: ^0.20.1
+  percent_indicator: ^4.2.4
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,8 @@ flutter:
   assets:
     - assets/financer_images/logoProjects.png
     - assets/icons/device_control/climate.png
+    - assets/icons/football/
+    - assets/football/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

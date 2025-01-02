@@ -74,7 +74,8 @@ class FinanceStatisticPage extends StatelessWidget {
                       padding: WidgetStateProperty.all(
                         EdgeInsets.symmetric(vertical: 12, horizontal: 48),
                       ),
-                      backgroundColor: WidgetStateProperty.all(AppColorsFinance.black),
+                      backgroundColor:
+                          WidgetStateProperty.all(AppColorsFinance.black),
                     ),
                     onPressed: () {},
                     child:
@@ -88,7 +89,7 @@ class FinanceStatisticPage extends StatelessWidget {
                   child: Icon(
                     color: AppColorsFinance.primary,
                     Icons.arrow_back,
-                    size: 100,
+                    size: 80,
                   ),
                 ),
               ),
